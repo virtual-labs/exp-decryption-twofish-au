@@ -2,38 +2,55 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the purpose of subkey mixing in Twofish during decryption?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To generate round subkeys",
+        "b": "To reverse the order of subkeys",
+        "c": "To ensure accurate data reconstruction",
+        "d": "To apply modular arithmetic"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "explanation": {
+        "a": "Incorrect. Subkey mixing does not generate round subkeys during decryption; it involves combining subkeys with data.",
+        "b": "Incorrect. Subkey mixing ensures accurate data reconstruction by applying subkeys in the correct order.",
+        "c": "Correct. Subkey mixing is crucial in Twofish decryption to accurately reconstruct the original data.",
+        "d": "Incorrect. Modular arithmetic is part of some operations but not the primary purpose of subkey mixing."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What additional operations might be performed in the final round of Twofish decryption?",
+      "answers": {
+        "a": "Key Schedule",
+        "b": "XOR-ing with specific constants",
+        "c": "Feistel Network Decryption",
+        "d": "MDS Matrix Multiplication"
+      },
+      "explanation": {
+        "a": "Incorrect. Key Schedule is not performed in the final round of Twofish decryption.",
+        "b": "Correct. XOR-ing with specific constants is one of the additional operations in the final round of Twofish decryption.",
+        "c": "Incorrect. Feistel Network Decryption is not typically part of the final round in Twofish decryption.",
+        "d": "Incorrect. MDS Matrix Multiplication is not performed in the final round of Twofish decryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "How does the Twofish algorithm obtain the decrypted data?",
+      "answers": {
+        "a": "After the Feistel Network Decryption",
+        "b": "By applying the inverse F-Function",
+        "c": "Through subkey mixing",
+        "d": "By XOR-ing with random constants"
+      },
+      "explanation": {
+        "a": "Incorrect. Decrypted data is obtained after completing all rounds and final operations, not specifically after Feistel Network Decryption.",
+        "b": "Incorrect. While the F-Function is involved, decryption does not rely solely on the inverse F-Function.",
+        "c": "Correct. The decrypted data is obtained through the application of subkey mixing and other operations.",
+        "d": "Incorrect. XOR-ing with random constants is not part of the standard Twofish decryption process."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     }
   ]
 }
