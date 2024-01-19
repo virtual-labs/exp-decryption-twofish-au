@@ -2,38 +2,55 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the initial step in the Twofish decryption process?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Inverse F-Function",
+        "b": "Key Schedule",
+        "c": "Feistel Network Decryption",
+        "d": "Subkey Mixing"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "explanation": {
+        "a": "Incorrect. The initial step in Twofish decryption is the Key Schedule, responsible for generating round subkeys.",
+        "b": "Correct. The Twofish decryption process begins with the Key Schedule, generating round subkeys from the secret key.",
+        "c": "Incorrect. Feistel Network Decryption is a later stage in the Twofish decryption process.",
+        "d": "Incorrect. Subkey Mixing occurs at various stages but is not the initial step in decryption."
       },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Which operation is a part of the F-function in Twofish during encryption?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Subkey Mixing",
+        "b": "MDS Matrix Multiplication",
+        "c": "XOR-ing with Constants",
+        "d": "Feistel Network Decryption"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "explanation": {
+        "a": "Incorrect. Subkey Mixing is a separate operation in Twofish and not part of the F-function.",
+        "b": "Correct. The F-function in Twofish involves MDS Matrix Multiplication among other operations.",
+        "c": "Incorrect. XOR-ing with Constants is not directly part of the F-function in Twofish encryption.",
+        "d": "Incorrect. Feistel Network Decryption is a distinct process in Twofish."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does the Feistel Network structure in Twofish do during decryption?",
+      "answers": {
+        "a": "Applies F-function to both data halves simultaneously",
+        "b": "Mixes subkeys with the data",
+        "c": "Splits the data into two halves",
+        "d": "Reverses the order of subkeys"
+      },
+      "explanation": {
+        "a": "Incorrect. The F-function is applied to one data half at a time in Twofish decryption.",
+        "b": "Incorrect. Mixing subkeys with data is a step, but not the primary function of the Feistel Network structure.",
+        "c": "Correct. The Feistel Network structure splits the data into two halves during decryption.",
+        "d": "Incorrect. The order of subkeys is reversed at different stages, not directly by the Feistel Network."
       },
       "correctAnswer": "c",
-      "difficulty": "beginner"
+      "difficulty": "intermediate"
     }
   ]
 }
