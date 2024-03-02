@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/css/main.5c6adb11.css",
+    "main.js": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/js/main.ddb5d070.js",
+    "static/js/453.93557bbe.chunk.js": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/js/453.93557bbe.chunk.js",
+    "static/media/kset.mp4": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/media/kset.0d5ee67d24b098198763.mp4",
+    "static/media/sset.mp4": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/media/sset.a2199a7d63de91c917a4.mp4",
+    "static/media/1.png": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/media/1.f2dc0759a903769c0351.png",
+    "static/media/3.png": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/media/3.88ab4c1f9ad951af2f32.png",
+    "index.html": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/index.html",
+    "main.5c6adb11.css.map": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/css/main.5c6adb11.css.map",
+    "main.ddb5d070.js.map": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/js/main.ddb5d070.js.map",
+    "453.93557bbe.chunk.js.map": "/exp-decryption-ciphertext-using-twofish-algorithm-au/simulation/static/js/453.93557bbe.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5c6adb11.css",
+    "static/js/main.ddb5d070.js"
+  ]
+}
