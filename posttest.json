@@ -51,6 +51,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
+    },
+        {
+      "question": "What ensures security in Twofish?",
+      "answers": {
+        "a": "Key whitening only",
+        "b": "Key-dependent S-boxes and MDS matrix operations",
+        "c": "Single round encryption",
+        "d": "Public key cryptography"
+      },
+      "explanation": {
+        "a": "Incorrect. Key whitening alone does not ensure security in Twofish.",
+        "b": "Correct. Twofish employs key-dependent S-boxes and MDS matrix operations to enhance security.",
+        "c": "Incorrect. Single round encryption is not sufficient for security in Twofish.",
+        "d": "Incorrect. Twofish is a symmetric key algorithm, not based on public key cryptography."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Decryption in Twofish reverses which operations?",
+      "answers": {
+        "a": "Only key schedule",
+        "b": "Only S-box substitution",
+        "c": "All encryption operations including key whitening, F-function, and Feistel rounds",
+        "d": "Only XOR operations"
+      },
+      "explanation": {
+        "a": "Incorrect. Decryption reverses more than just the key schedule.",
+        "b": "Incorrect. Decryption involves reversing multiple operations, not just S-box substitution.",
+        "c": "Correct. Decryption in Twofish reverses all encryption operations including key whitening, F-function, and Feistel rounds.",
+        "d": "Incorrect. Decryption involves more than just XOR operations."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "What is the purpose of post-whitening in decryption?",
+      "answers": {
+        "a": "To generate subkeys",
+        "b": "To undo the final key XOR applied during encryption",
+        "c": "To swap halves of ciphertext",
+        "d": "To apply the F-function again"
+      },
+      "explanation": {
+        "a": "Incorrect. Post-whitening does not generate subkeys.",
+        "b": "Correct. Post-whitening undoes the final key XOR applied during encryption.",
+        "c": "Incorrect. Swapping halves is not the purpose of post-whitening.",
+        "d": "Incorrect. The F-function is not applied again during post-whitening."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
     }
   ]
 }

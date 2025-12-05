@@ -470,13 +470,131 @@
                     </div>
                     <p class="panel">Explanation</p>
                 </div>
+
+                 <div class="question intermediate">
+                    What ensures security in Twofish?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer3a">
+                      <label>
+                        <input type="radio" name="question3" value="a">
+                        a: Key whitening only
+                      </label>
+                      <a href="#" id="explanation3a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3b">
+                      <label>
+                        <input type="radio" name="question3" value="b">
+                        b: Key-dependent S-boxes and MDS matrix operations
+                      </label>
+                      <a href="#" id="explanation3b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3c">
+                      <label>
+                        <input type="radio" name="question3" value="c">
+                        c: Single round encryption
+                      </label>
+                      <a href="#" id="explanation3c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer3d">
+                      <label>
+                        <input type="radio" name="question3" value="d">
+                        d: Public key cryptography
+                      </label>
+                      <a href="#" id="explanation3d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                  <div class="question intermediate">
+                    Decryption in Twofish reverses which operations?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer4a">
+                      <label>
+                        <input type="radio" name="question4" value="a">
+                        a: Only key schedule
+                      </label>
+                      <a href="#" id="explanation4a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4b">
+                      <label>
+                        <input type="radio" name="question4" value="b">
+                        b: Only S-box substitution
+                      </label>
+                      <a href="#" id="explanation4b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4c">
+                      <label>
+                        <input type="radio" name="question4" value="c">
+                        c: All encryption operations including key whitening, F-function, and Feistel rounds
+                      </label>
+                      <a href="#" id="explanation4c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer4d">
+                      <label>
+                        <input type="radio" name="question4" value="d">
+                        d: Only XOR operations
+                      </label>
+                      <a href="#" id="explanation4d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
+                 <div class="question intermediate">
+                    What is the purpose of post-whitening in decryption?
+                  </div>
+                  
+                  <div class="answers">
+                    <div id="answer5a">
+                      <label>
+                        <input type="radio" name="question5" value="a">
+                        a: To generate subkeys
+                      </label>
+                      <a href="#" id="explanation5a" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5b">
+                      <label>
+                        <input type="radio" name="question5" value="b">
+                        b: To undo the final key XOR applied during encryption
+                      </label>
+                      <a href="#" id="explanation5b" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5c">
+                      <label>
+                        <input type="radio" name="question5" value="c">
+                        c: To swap halves of ciphertext
+                      </label>
+                      <a href="#" id="explanation5c" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                    <div id="answer5d">
+                      <label>
+                        <input type="radio" name="question5" value="d">
+                        d: To apply the F-function again
+                      </label>
+                      <a href="#" id="explanation5d" class="accordion" onclick="return false;">Explanation</a>
+                    </div>
+                    <p class="panel">Explanation</p>
+                </div>
+
                </div>
                 <button id="submit" class="btn btn-primary">Submit Quiz</button>
                 <div id="results"></div>
           </div>
             
             <script>
-              const myQuestions = [{"question":"What is the purpose of subkey mixing in Twofish during decryption?","answers":{"a":"To generate round subkeys","b":"To reverse the order of subkeys","c":"To ensure accurate data reconstruction","d":"To apply modular arithmetic"},"explanation":{"a":"Incorrect. Subkey mixing does not generate round subkeys during decryption; it involves combining subkeys with data.","b":"Incorrect. Subkey mixing ensures accurate data reconstruction by applying subkeys in the correct order.","c":"Correct. Subkey mixing is crucial in Twofish decryption to accurately reconstruct the original data.","d":"Incorrect. Modular arithmetic is part of some operations but not the primary purpose of subkey mixing."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"What additional operations might be performed in the final round of Twofish decryption?","answers":{"a":"Key Schedule","b":"XOR-ing with specific constants","c":"Feistel Network Decryption","d":"MDS Matrix Multiplication"},"explanation":{"a":"Incorrect. Key Schedule is not performed in the final round of Twofish decryption.","b":"Correct. XOR-ing with specific constants is one of the additional operations in the final round of Twofish decryption.","c":"Incorrect. Feistel Network Decryption is not typically part of the final round in Twofish decryption.","d":"Incorrect. MDS Matrix Multiplication is not performed in the final round of Twofish decryption."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"How does the Twofish algorithm obtain the decrypted data?","answers":{"a":"After the Feistel Network Decryption","b":"By applying the inverse F-Function","c":"Through subkey mixing","d":"By XOR-ing with random constants"},"explanation":{"a":"Incorrect. Decrypted data is obtained after completing all rounds and final operations, not specifically after Feistel Network Decryption.","b":"Incorrect. While the F-Function is involved, decryption does not rely solely on the inverse F-Function.","c":"Correct. The decrypted data is obtained through the application of subkey mixing and other operations.","d":"Incorrect. XOR-ing with random constants is not part of the standard Twofish decryption process."},"correctAnswer":"c","difficulty":"intermediate"}];
+              const myQuestions = [{"question":"What is the purpose of subkey mixing in Twofish during decryption?","answers":{"a":"To generate round subkeys","b":"To reverse the order of subkeys","c":"To ensure accurate data reconstruction","d":"To apply modular arithmetic"},"explanation":{"a":"Incorrect. Subkey mixing does not generate round subkeys during decryption; it involves combining subkeys with data.","b":"Incorrect. Subkey mixing ensures accurate data reconstruction by applying subkeys in the correct order.","c":"Correct. Subkey mixing is crucial in Twofish decryption to accurately reconstruct the original data.","d":"Incorrect. Modular arithmetic is part of some operations but not the primary purpose of subkey mixing."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"What additional operations might be performed in the final round of Twofish decryption?","answers":{"a":"Key Schedule","b":"XOR-ing with specific constants","c":"Feistel Network Decryption","d":"MDS Matrix Multiplication"},"explanation":{"a":"Incorrect. Key Schedule is not performed in the final round of Twofish decryption.","b":"Correct. XOR-ing with specific constants is one of the additional operations in the final round of Twofish decryption.","c":"Incorrect. Feistel Network Decryption is not typically part of the final round in Twofish decryption.","d":"Incorrect. MDS Matrix Multiplication is not performed in the final round of Twofish decryption."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"How does the Twofish algorithm obtain the decrypted data?","answers":{"a":"After the Feistel Network Decryption","b":"By applying the inverse F-Function","c":"Through subkey mixing","d":"By XOR-ing with random constants"},"explanation":{"a":"Incorrect. Decrypted data is obtained after completing all rounds and final operations, not specifically after Feistel Network Decryption.","b":"Incorrect. While the F-Function is involved, decryption does not rely solely on the inverse F-Function.","c":"Correct. The decrypted data is obtained through the application of subkey mixing and other operations.","d":"Incorrect. XOR-ing with random constants is not part of the standard Twofish decryption process."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"What ensures security in Twofish?","answers":{"a":"Key whitening only","b":"Key-dependent S-boxes and MDS matrix operations","c":"Single round encryption","d":"Public key cryptography"},"explanation":{"a":"Incorrect. Key whitening is just one aspect of Twofish's security.","b":"Correct. Twofish's security is ensured by the use of key-dependent S-boxes and MDS matrix operations.","c":"Incorrect. Twofish uses multiple rounds of encryption for security, not a single round.","d":"Incorrect. Twofish is a symmetric key algorithm, not based on public key cryptography."},"correctAnswer":"b","difficulty":"intermediate"},{"question":"Decryption in Twofish reverses which operations?","answers":{"a":"Only key schedule","b":"Only S-box substitution","c":"All encryption operations including key whitening, F-function, and Feistel rounds","d":"Only XOR operations"},"explanation":{"a":"Incorrect. Decryption reverses more than just the key schedule.","b":"Incorrect. Decryption involves reversing multiple operations, not just S-box substitution.","c":"Correct. Decryption in Twofish reverses all encryption operations including key whitening, F-function, and Feistel rounds.","d":"Incorrect. Decryption involves more than just reversing XOR operations."},"correctAnswer":"c","difficulty":"intermediate"},{"question":"What is the purpose of post-whitening in decryption?","answers":{"a":"To generate subkeys","b":"To undo the final key XOR applied during encryption","c":"To swap halves of ciphertext","d":"To apply the F-function again"},"explanation":{"a":"Incorrect. Post-whitening does not generate subkeys; it is used to reverse the final key XOR.","b":"Correct. Post-whitening in decryption is used to undo the final key XOR that was applied during encryption.","c":"Incorrect. Swapping halves of ciphertext is not the purpose of post-whitening.","d":"Incorrect. The F-function is not reapplied during post-whitening."},"correctAnswer":"b","difficulty":"intermediate"}];
             </script>
               <script src="./assets/js/assessment_v2.js"></script>  
           <div class="bug-report-mobile">
