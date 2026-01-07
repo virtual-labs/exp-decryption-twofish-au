@@ -51,6 +51,57 @@
       },
       "correctAnswer": "c",
       "difficulty": "intermediate"
+    },
+        {
+      "question": "What is the first step in Twofish decryption?",
+      "answers": {
+        "a": "Inverse key whitening",
+        "b": "F-function application",
+        "c": "Swapping plaintext halves",
+        "d": "Generating random keys"
+      },
+      "explanation": {
+        "a": "Correct. The first step in Twofish decryption is inverse key whitening, which removes the initial key mixing applied during encryption.",
+        "b": "Incorrect. F-function application occurs later in the decryption process.",
+        "c": "Incorrect. Swapping plaintext halves is part of the Feistel structure but not the first step.",
+        "d": "Incorrect. Generating random keys is not part of the Twofish decryption process."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Which structure does Twofish use internally?",
+      "answers": {
+        "a": "Substitution-Permutation Network (SPN)",
+        "b": "Feistel Network",
+        "c": "Linear Feedback Shift Register (LFSR)",
+        "d": "Merkle-Damgård Construction"
+      },
+      "explanation": {
+        "a": "Incorrect. Twofish does not use a Substitution-Permutation Network structure.",
+        "b": "Correct. Twofish uses a Feistel Network structure internally for its encryption and decryption processes.",
+        "c": "Incorrect. Twofish does not utilize Linear Feedback Shift Registers.",
+        "d": "Incorrect. Merkle-Damgård Construction is not related to Twofish's internal structure."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Maximum key size supported by Twofish?",
+      "answers": {
+        "a": "128 bits",
+        "b": "192 bits",
+        "c": "256 bits",
+        "d": "512 bits"
+      },
+      "explanation": {
+        "a": "Incorrect. Twofish supports larger key sizes than 128 bits.",
+        "b": "Incorrect. Twofish supports larger key sizes than 192 bits.",
+        "c": "Correct. Twofish supports a maximum key size of 256 bits.",
+        "d": "Incorrect. Twofish does not support a key size of 512 bits."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
     }
   ]
 }
