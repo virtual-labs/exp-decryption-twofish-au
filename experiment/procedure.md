@@ -1,8 +1,8 @@
-# Experiment 8: Decryption of Ciphertext Using Twofish Algorithm
 
-## Procedure
 
-Welcome to the Twofish Decryption Simulator! Explore the internal mechanics of the Twofish decryption process and gain a clear, visual understanding of its 16-round reverse transformation.
+### Procedure
+
+Explore the internal mechanics of the Twofish decryption process and gain a clear, visual understanding of its 16-round reverse transformation.
 
 → Begin by entering a 16-character ciphertext message. This input is automatically converted into its corresponding 128-bit binary format.
 
