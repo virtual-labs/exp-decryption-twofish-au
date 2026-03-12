@@ -1,6 +1,6 @@
-# Experiment 8: Decryption of Ciphertext Using Twofish Algorithm
 
-## Twofish Algorithm Decryption Process
+
+#### Twofish Algorithm Decryption Process
 
 Twofish is a symmetric key block cipher that operates on 128-bit blocks and supports key sizes of 128, 192, or 256 bits. It uses a 16-round Feistel network, combining key-dependent S-boxes, an MDS (Maximum Distance Separable) matrix, modular arithmetic, and XOR operations to provide high security and strong diffusion. While encryption converts plaintext to ciphertext, the decryption process reverses these steps to recover the original data.
 
