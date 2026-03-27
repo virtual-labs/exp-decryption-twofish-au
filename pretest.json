@@ -1,0 +1,107 @@
+{
+  "version": 2.0,
+  "questions": [
+    {
+      "question": "What is the initial step in the Twofish decryption process?",
+      "answers": {
+        "a": "Inverse F-Function",
+        "b": "Key Schedule",
+        "c": "Feistel Network Decryption",
+        "d": "Subkey Mixing"
+      },
+      "explanation": {
+        "a": "Incorrect. The initial step in Twofish decryption is the Key Schedule, responsible for generating round subkeys.",
+        "b": "Correct. The Twofish decryption process begins with the Key Schedule, generating round subkeys from the secret key.",
+        "c": "Incorrect. Feistel Network Decryption is a later stage in the Twofish decryption process.",
+        "d": "Incorrect. Subkey Mixing occurs at various stages but is not the initial step in decryption."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which operation is a part of the F-function in Twofish during encryption?",
+      "answers": {
+        "a": "Subkey Mixing",
+        "b": "MDS Matrix Multiplication",
+        "c": "XOR-ing with Constants",
+        "d": "Feistel Network Decryption"
+      },
+      "explanation": {
+        "a": "Incorrect. Subkey Mixing is a separate operation in Twofish and not part of the F-function.",
+        "b": "Correct. The F-function in Twofish involves MDS Matrix Multiplication among other operations.",
+        "c": "Incorrect. XOR-ing with Constants is not directly part of the F-function in Twofish encryption.",
+        "d": "Incorrect. Feistel Network Decryption is a distinct process in Twofish."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does the Feistel Network structure in Twofish do during decryption?",
+      "answers": {
+        "a": "Applies F-function to both data halves simultaneously",
+        "b": "Mixes subkeys with the data",
+        "c": "Splits the data into two halves",
+        "d": "Reverses the order of subkeys"
+      },
+      "explanation": {
+        "a": "Incorrect. The F-function is applied to one data half at a time in Twofish decryption.",
+        "b": "Incorrect. Mixing subkeys with data is a step, but not the primary function of the Feistel Network structure.",
+        "c": "Correct. The Feistel Network structure splits the data into two halves during decryption.",
+        "d": "Incorrect. The order of subkeys is reversed at different stages, not directly by the Feistel Network."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "What is the first step in Twofish decryption?",
+      "answers": {
+        "a": "Inverse key whitening",
+        "b": "F-function application",
+        "c": "Swapping plaintext halves",
+        "d": "Generating random keys"
+      },
+      "explanation": {
+        "a": "Correct. The first step in Twofish decryption is inverse key whitening, which removes the initial key mixing applied during encryption.",
+        "b": "Incorrect. F-function application occurs later in the decryption process.",
+        "c": "Incorrect. Swapping plaintext halves is part of the Feistel structure but not the first step.",
+        "d": "Incorrect. Generating random keys is not part of the Twofish decryption process."
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Which structure does Twofish use internally?",
+      "answers": {
+        "a": "Substitution-Permutation Network (SPN)",
+        "b": "Feistel Network",
+        "c": "Linear Feedback Shift Register (LFSR)",
+        "d": "Merkle-Damgård Construction"
+      },
+      "explanation": {
+        "a": "Incorrect. Twofish does not use a Substitution-Permutation Network structure.",
+        "b": "Correct. Twofish uses a Feistel Network structure internally for its encryption and decryption processes.",
+        "c": "Incorrect. Twofish does not utilize Linear Feedback Shift Registers.",
+        "d": "Incorrect. Merkle-Damgård Construction is not related to Twofish's internal structure."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+        {
+      "question": "Maximum key size supported by Twofish?",
+      "answers": {
+        "a": "128 bits",
+        "b": "192 bits",
+        "c": "256 bits",
+        "d": "512 bits"
+      },
+      "explanation": {
+        "a": "Incorrect. Twofish supports larger key sizes than 128 bits.",
+        "b": "Incorrect. Twofish supports larger key sizes than 192 bits.",
+        "c": "Correct. Twofish supports a maximum key size of 256 bits.",
+        "d": "Incorrect. Twofish does not support a key size of 512 bits."
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    }
+  ]
+}
